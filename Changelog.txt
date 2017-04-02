@@ -1,0 +1,268 @@
+2.18.2017-01
+GENERAL
+- Queueing System was added and support all registered spells. 
+-- Registered spells are usually only those used by the rotations. If you need more spells to be added, please pass the informations to our development team and we will get the spells added on demand. 
+-- The spell name used should be the one you find in your spell book, in your client language.
+-- A new Macro was added /dpse cast Spell Name to use any registered spells. In example, to use Mage's Fire Blast on the English client we would macro /dpse cast Fire Blast
+-- Queued spells will be removed after 5 seconds of being added even if they were not casted.
+
+PROTECTION WARRIOR
+- Added several Rage threshold to options for spells so that we can pool Rage for more important spells.
+- Concussion Blow can now be used as an interrupt.
+- Heroic Strike will use the Cleave / Strike options.
+- Shield Block now properly works.
+
+MAGE
+- Added support for Arcane Brilliance.
+- Arcane Intellect should no more overwrite Arcane Intellect.
+
+
+2.13.2017-01
+MAGE
+- Added support for Counterspell Interrupt.
+
+ROGUE
+- Added support for Kick Interrupt.
+
+SHAMAN
+- Added Enhancement rotation with totems and imbues support.
+- Added support for Earth Shock Interrupt.
+
+WARRIOR
+- Added support for Pummel and Shield Bash Interrupts.
+
+2.6.2016-01
+WARRIOR
+- Added Protection rotation. It can be enabled and tweaked in the General Settings. Once enabled, the selected stance will be Defensive and the manager will produce a normal Protection rotation.
+
+1.24.2017-01
+WARRIOR
+- Added support and option for Intercept.
+
+
+1.19.2017-01
+GENERAL
+- Toggle command has been changed from '/dps' to '/dpse' to avoid conflicts with AddOns.
+
+ROGUE
+- Assassination support added
+- Cold Blood Eviscerate added
+- Backstab pooling option added
+- Will now use evicerate appropriately if the target is about to die
+
+
+1.16.2017-01
+PALADIN
+- Supports Specs: Retribution
+- Supports all 3 endgame Retribution playstyles and leveling
+
+
+1.14.2017-01
+GENERAL
+- Will no longer try to cast while sitting/lying/eating/kneeling
+- Will not try to cast spells with a cast time while falling/jumping
+
+WARLOCK
+- Drain Soul rank can be changed in advanced options
+- Demonic Sacrifice has been added
+- Corruption will now be appropriatly casting while moving with 5/5 Improved Corruption
+- Will now properly prevent the double casting of Fear, Corruption and Immolate
+- Added Auto melee attack
+- Added Curse of Agony option
+
+
+ 1.13.2017-01
+GENERAL
+- Added 'Avoid Tapped Monsters' option to not attack things if they are tagged by another player not in your group
+
+MAGE
+- Supports Specs: ALL MAGE SPECS! Pick your flavor and customize your UI options!
+- All Primary Talents Supported (Presence of Mind, Arcane Power, Combustion etc)
+- Improved scorch 5 stack maintenance
+- Shatter Combo option
+
+WARLOCK
+- Will no longer double cast Corruption
+
+HUNTNER
+- Will no longer try to sic pet on dead units
+
+ROGUE
+- Will now use other finishes if Expose Armor is checked but not learned
+
+
+1.11.2017-03
+GENERAL
+- Moved anti-afk to advanced options and disabled by default. Use at your own risk, Elysium mentioned adding some handling for anti-afk.
+
+
+1.11.2017-02
+WARRIOR
+- Fixed rend being used while disabled in the UI
+
+
+1.11.2017-01
+GENERAL
+- Anti-AFK Added
+
+WARLOCK
+- Immolate will no longer double cast
+- Improved Life Tap functionality, added more options
+- Drain Soul will not be used on monsters that don't grant experience
+
+WARRIOR
+- Arms 31/X/X now supported
+- Removed Charge Distance UI Option
+- Cleave / Heroic Strike now accounts for the Improved Heroic strike talent ranks if it will be casting Heroic Strike(does not apply to cleave)
+- Hamstring Added
+- Sweeping Strikes Added
+- Mortal Strike Added
+- Fixed Auto Attack
+- Initate Combat Option added
+- Reduced rotation pulse frequency for better timing
+
+ROGUE
+- Kidney Shot Added
+- Fixed Auto Attack
+
+
+1.10.2017-04
+WARLOCK
+- Fixed Shadowburn Lua Error
+- Fixed Drain Soul, will now be used correctly.
+
+
+1.10.2017-03
+GENERAL
+- Fixed an issue with auto-shoot causing errors
+
+
+1.10.2017-02
+GENERAL
+- Fixed chat output spam
+
+WARLOCK
+- Fixed an issue where the pet would not switch to your current target if you have Pet Assist enabled
+
+
+1.10.2017-01
+GENERAL
+- Fixed an issue with Health Percent checks on Targets using the Player's health values (doh!)
+
+WARLOCK
+- Supports Specs: ALL WARLOCK SPECS! Pick your flavor and customize your UI options!
+- Rotation Added
+- Auto Handles Nightfall Procs
+- Life Tap Handling
+- Fear/Death Coil Target Within Distance
+- Maintains DoTs
+- Uses Amplify Curse
+- Supports Conflag and Shadowburn
+- Custom Curse Selection
+- Filler Spells (Drain Life for drain tanking, Shadowbolt and Wand)
+- Soul Link and Fel Domination Support
+- Drain Soul for shards support
+
+
+1.9.2017-02
+HUNTER
+- Wing Clip: Will no longer be used if the debuff is present or the UI option is disabled
+- Aspect of the Hawk: Auto-casting of this has been removed temporarily
+- Added Intimidation Support
+- Added Bestial Wrath Support
+- Added Pet Assist, this makes sure your pet is currently attacking your target, does not spam it.
+- Added Concussive Shot
+
+
+1.9.2017-01
+GENERAL
+- CORE UPDATE: Action Slot 25 will no more be used to hold every abilities. Abilities will now be scanned and the positions they are in your bars will be stored. If you have learned abilities and those are not in your bars, the core will add these to your right action bars, slots 25+. You can then take these abilities and move these around as you like but they need to be somewhere.
+-- As a result of this change, changing abilities from bars to bars while to rotations are running should not be an issue anymore. If you select an item, the manager gives you up to 5 seconds to place it to it's new localtion, after this delay, it will clear the cursor and place it back to 25+ slots.
+--- This will fix the problem where we were hearing action bar items changed during fight as well as keeping the improved functionality from using Action Slots.
+
+WARRIOR
+- Fixed issue with Warrior Rotation Initialized text appearing more than once
+- Stances will now properly be handled, changing stances manually should not cause issues anymore.
+- The rotation will not attempt to queue Cleave or Heroic Strike more than one anymore.
+
+
+1.6.2017-02
+GENERAL
+- CORE UPDATE: We have modified the functionality a bit, we will need to reserve ACTION SLOT 25 on your action bars. 
+-- This is located in the top slot of 'right action bar 1'. Please note anything you put in this slot will be overwritten.
+--- This change was added to better support target distance and rage/energy/mana values for spell casting and racial handling.
+
+
+1.6.2017-01
+GENERAL
+- Fixed an issue that would cause crashes when trying to determine line of sight
+- Tooltips are now supported in the UI. You can see hints about how Abilities that are displayed in the UI work by moving your mouse over the checkboxes. 
+
+
+1.5.2017-01
+GENERAL
+- Auto Attack option was added back to Warrior and Rogue, it will however still not be there for Hunter
+- Sanity checks were added to prevent the rotations from attempting to cast on allied or dead units
+
+ROGUE
+- Ambush will not attempt to cast on non enemy units anymore
+
+WARRIOR
+- Default value for Heroic Strike / Cleave changed to 20, down from 60
+- Demoralizing Shout is now disabled by default
+- Charge will not attempt to cast on non enemy units anymore
+- Orc Warrior will not attempt to use the Orc 'Command' Passive instead of Demoralizing Shout anymore
+
+
+1.4.2017-02
+WARRIOR
+- Added some more conditions to stances so that we always have a stance assigned. Default will be Battle if no options are selected.
+- Thunderclap will not attempt to cast anymore if not in Battle Stance.
+- Changing to Defensive Stance should not break the rotation anymore.
+
+
+1.4.2017-01
+HUNTER
+- Removed Auto Attack due to conflict with Auto Shoot
+
+
+1.3.2017-04
+HUNTER
+- Fixed error from not having learned Wing Clip
+
+WARRIOR
+- Fixed error from not having learned Rend
+- Fixed error from not having learned Overpower
+
+
+1.3.2017-03
+GENERAL
+- Should now work with client languages other than English
+
+HUNTER
+- Berserking Added to Racials
+
+ROGUE
+- Berserking Added to Racials
+
+WARRIOR
+- Berserking Added to Racials
+
+
+1.3.2017-02
+GENERAL
+- Added Detected Class to Load text
+- Rotation will now pause correctly when dead or ghost
+
+1.3.2017-01
+GENERAL
+-Initial Changelog
+
+WARRIOR
+-Rotation Added
+
+ROGUE
+-Rotation Added
+
+HUNTER
+-Rotation Added

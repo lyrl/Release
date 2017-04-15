@@ -1,8 +1,8 @@
 # DPSEngine
 
 Developer: Soapbox Rotations<br>
-Copyright Soapbox Rotations<br>
 Website: https://dpsengine.com/<br>
+Copyright Soapbox Rotations<br>
 
 This is a free version of our premium software, DPSEngine. This free version supports up to level 30. 
 
